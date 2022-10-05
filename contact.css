@@ -1,0 +1,375 @@
+*{margin: 0px;padding: 0px;}
+body {
+    font-size: 14px;
+    font-family: verdana;
+}
+.container{
+    width: 100%;
+    height: 500px;
+}
+
+menu{
+    background: bisque;
+    width: 100%;
+    height: 65px;
+    overflow: hidden;
+}
+
+/* Ini css menu kiri */
+.heading{
+    float: left;
+    width: 640px;
+    margin-right: -430px;
+}
+nav ul {
+    list-style: none;
+}
+nav ul li {
+    float: left;
+    line-height: 65px;
+}
+nav ul li a {
+    float: left;
+    width:100px; 
+    display:block; 
+    text-align:center; 
+    color:black; 
+    text-decoration:none; 
+}
+nav ul ul {
+    display:none; 
+    list-style:none; 
+    position:absolute; 
+    background-color:rgb(21, 90, 115);
+    float: none;
+    top:50px; 
+    width:190px;
+    z-index: 9999;
+}
+nav ul li a:hover {
+    background-color:whitesmoke; 
+    display:block;
+    color: maroon;
+}
+nav ul li:hover ul {
+    display:block;
+}
+nav ul ul li a {
+    display:block;
+    padding-left:30px; 
+    text-align:left; 
+    width:160px;
+    height: 60px;
+    line-height: 60px;
+}
+nav ul ul li a:hover {
+    color:maroon;
+}
+.heading img{
+    float: left;
+    width: 100px;
+    margin-bottom:50px;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left:30px;
+}
+/*Ini CSS menu kanan */
+.kontak img{
+    width: 30px;
+    float: right;
+    margin-right: 300px;
+    margin-top: -15px;
+}
+.logo1 img{
+    width: 20px;
+    float: right;
+    margin-top: 20px;
+    margin-right: 30px;
+}
+.kontak p{
+    margin-right: 50px;
+    float: right;
+    margin-top: 25px;
+}
+.cari{
+    width: 70px;
+    height: 70px;
+    background-color: red;
+    float: right;
+}
+.cari img{
+    width: 15px;
+    height: 15px;
+    float: right;
+    margin-top: 25px;
+    margin-right: 25px;
+}
+
+/*ini css walpaper ke-2*/
+.fotowalpaper img{
+    width: 100%;
+    height: 600px;
+    margin-top: 1px;
+}
+/* edit tulisan foto walpaper ke-2*/
+.foto{
+    width: 100%;
+    height: 300px;
+    margin: auto;
+}
+.tulisanfoto{
+    position: absolute;
+    width: 50%;
+    bottom: 60%;
+    top: 40%;
+    left: 29.5%;
+}
+.tulisanfoto .tulisantgh{
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    position: relative;
+    margin-top: -300px;
+}
+.tulisanfoto h3{
+    font-size: 180px;
+    font-family: broad away;
+    color: rgb(21, 90, 115);
+    margin-left: -45px;
+    border-top-right-radius: 50px;
+}
+.tulisanfoto p{
+    font-size: 15px;
+    font-family: verdana;
+    color: rgb(21, 90, 115);
+    margin-left: 150px;
+    margin-bottom: 50px;
+}
+.tulisanfoto button{
+    margin-left: 200px;
+    padding: 15px;
+    background-color: bisque;
+    color:rgb(21, 90, 115);
+    font-family: sans-serif;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+}
+.tulisanfoto button:hover{
+    background-color:red;
+}
+.tulisanfoto button:hover{
+    background-color:red;
+}
+
+/*Peta Maps*/
+
+.maps{
+    width: 100%;
+}
+.maps iframe{
+    width: 1100px;
+    height: 450px; 
+    margin-top: 90px;
+    padding-left: 84px;
+}
+/* Isian From contact*/
+.isianfrom2{
+    width: 1100px;
+    height: auto;
+    overflow: hidden;
+    margin: auto;
+}
+.isianfrom2 h3{
+    margin-left: 40px; 
+    margin-top: 60px; 
+    margin-bottom: 20px; 
+    font-size: 20px;
+}
+
+.isianfrom2 .kiri{
+    float: left; width: 700px;
+}
+
+.isianfrom2 .kiri textarea{  
+    margin-left: 40px;
+}
+.isianfrom2 .kiri .nama input {
+    margin-left: 40px; 
+    margin-top: 20px;
+    padding: 10px; 
+    width: 245px;
+}
+.isianfrom2 .kiri input{
+    margin-left: 40px; 
+    padding: 10px; 
+    margin-top: 20px; 
+    width: 560px;
+}
+.isianfrom2 .kiri .klik button{
+    margin-left: 40px; 
+    margin-top: 30px; 
+    margin-bottom: 50px;
+    background-color: rgb(21, 90, 115); 
+    color: white; 
+    width: 100px; 
+    padding: 10px;
+     border:none;
+}
+
+.information{
+    width: 250px; 
+    float: left; 
+    margin: 2px 0 0 70px;
+}
+.information .infor-bawah{
+    margin-bottom: 40px;
+}
+.information .infor-bawah img{
+    width: 35px; 
+    height: auto;
+}
+.information .infor-bawah h5{
+   margin: -40px 0 5px 0px; 
+   color: navy;
+   margin-left: 50px;
+   font-size: 15px;
+}
+.information .infor-bawah p{
+   margin-left: 50px;
+   color: grey;
+   font-size: 14px;
+}
+
+/*footer*/
+.footer{
+    margin: auto;
+    width: 100%;
+    height:500px;
+    background-color: rgb(21, 90, 115);
+}
+.footer .container{
+    width: 1200px;
+    height:100px;
+    margin: auto;
+}
+.footer .bg1 .atas img{
+    margin-top: 30px;
+}
+.footer .bg1 .atas .gab{
+    margin-top: 35px;
+}
+
+.footer .bg1 .atas a{
+    margin-top: 8px;
+    color: bisque;
+}
+
+.footer .bg1 .atas ul li{
+    list-style: none;
+}
+.footer .bg1 .bawah{
+    margin-top: 20px;
+}
+
+.footer .footeratas{
+    width: 1100px;
+    height: 400px;
+    margin-left: 50px;
+}
+.footeratas .bg1{
+    width: auto;
+    margin-left: 15px;
+    height: 300px;
+    margin-top: 20px;
+    float: left;
+}
+.footer .bg1 .bawah img{
+    width: 20px;
+    height: 20px;
+    margin-left: 20px;
+}
+.bg1 ul li{
+    list-style: none;
+}
+
+.bg1 .ke2 .bungkus ul li{
+    margin-left: 75px;
+    margin-bottom: 5px;
+}
+.bg1 .ke2 ul a{
+    font-size: 16px;
+    color: bisque;
+}
+.bg1 .pembungkusfut .kiri{
+    width: 65px;
+    height: 100px;
+    margin-left: 20px; margin-top: 60px;
+}
+.bg1 .pembungkusfut .kanan{
+    width: 65px;
+    height: 100px;
+    margin-right: 20px; margin-top: 60px;
+}
+.bg1 .pembungkusfut .kiri ul li a{
+    color: bisque;
+    line-height: 25px;
+   
+}
+.bg1 .pembungkusfut .kanan ul li a{
+    color: bisque;
+    line-height: 25px;
+}
+.bg1 .ke2 .bungkus{
+    width: 256px;
+    height: 150px;
+    margin-top: 60px;
+}
+.bg1 h3{
+    font-size: 18px;
+    text-align: center; color:white;
+}
+.bg1 .bjudul {
+    width: 250px;
+    height: 30px;
+    margin-top: 30px;
+}
+.bg1 .pembungkusfut{    
+    overflow: hidden;
+}
+.bg1 .pembungkusfut .kiri{
+    float: left;
+}
+.bg1 .pembungkusfut .kanan{
+    float: right;
+}
+.bg1 .imgfut{
+    width: 250px;
+    height: 200px;
+    margin: auto;
+    margin-top: 50px;
+}
+.bg1 .imgfut img{
+    margin-left: 5px; margin-top: 5px;
+    border-radius: 5px;
+}
+
+.bg1 .imgfut img{
+    width: 70px; height: 70px;
+}
+.footer .footerbawah{
+    width: 1100px;
+    
+    margin-left: 50px;
+     margin-top: 30px;
+}
+.footer .footerbawah .contfb{
+    width: 800px;
+    height: 60px;
+    margin: auto;
+}
+.footer .footerbawah .contfb p{
+    text-align: center;
+    color: white; 
+    margin-top: 20px;
+}
