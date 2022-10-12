@@ -1,0 +1,420 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+menu{
+    width: 100%;
+    height: 65px;
+    background-color: bisque;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: fixed;
+    z-index: 100;
+}
+
+menu .logo{
+    float: left;
+    margin-left: 50px;
+}
+
+menu .logo img{
+    width: 100px;
+    height: auto;
+}
+
+/* menu kiri */
+menu nav ul li{
+    float: left;
+    line-height: 65px;
+    padding: 0 30px;
+}
+
+menu nav ul li:hover{
+    background-color: whitesmoke;
+}
+
+nav ul li a{
+    color: black;
+}
+
+nav ul li:hover a{
+    color: maroon;
+}
+
+nav ul ul{
+    display: none;
+    position: absolute;
+}
+
+nav ul li:hover ul{
+    display: block;
+    background-color: bisque;
+}
+
+nav ul li ul li{
+    float: none;
+}
+
+/* menu kanan */
+menu .menu-kanan{
+    display: flex;
+    align-items: center;
+}
+
+menu .kontak img{
+    width: 16px;
+    height: auto;
+    float: left;
+}
+
+menu .kontak p{
+    float: right;
+    padding: 0 15px;
+    margin-right: 15px;
+    border-right: 1px solid black;
+}
+
+menu .logo1{
+    margin-right: 20px;
+}
+
+menu .logo1 img{
+    width: 16px;
+    height: auto;
+    margin-right: 15px;
+}
+
+menu .cari{
+    width: 50px;
+    height: 65px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+menu .cari img{
+    width: 14px;
+    height: auto;
+}
+
+section{
+    padding: 65px 0;
+}
+
+/* foto */
+.foto{
+    width: 100%;
+    height: 400px;
+}
+
+.foto .wallpaper{
+    width: 100%;
+    height: 400px;
+    position: relative;
+}
+
+.foto .wallpaper img{
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    object-fit: cover;
+}
+
+.foto .wallpaper .tulisan{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.foto .wallpaper .tulisan h3{
+    font-size: 96px;
+    font-family: broad away;
+    color: rgb(21, 90, 115);
+}
+
+.foto .wallpaper .tulisan p{
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+/* map */
+.map{
+    width: 100%;
+    height: auto;
+    padding: 100px 0 75px;
+    display: flex;
+    justify-content: center;
+}
+
+.map iframe{
+    width: 1100px;
+    height: 450px;
+}
+
+/* judul form */
+.judulform{
+    width: 80%;
+    height: auto;
+    margin: auto;
+}
+
+.judulform h3{
+    font-size: 32px;
+    padding-bottom: 10px;
+}
+
+/* isian form */
+.isianform{
+    width: 80%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    column-gap: 36px;
+}
+
+/* isian form kiri */
+.isianform .kiri{
+    width: 650px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.isianform .kiri textarea{
+    width: auto;
+}
+
+.isianform .kiri .info{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.isianform .kiri .info input{
+    width: 280px;
+    padding: 10px;
+}
+
+.isianform .kiri input{
+    width: auto;
+    padding: 10px;
+}
+
+.isianform .kirim button{
+    padding: 10px 25px;
+    border: none;
+    background-color: maroon;
+    color: white;
+    font-weight: 700;
+}
+
+.isianform .kirim button:hover{
+    background-color: lightseagreen;
+    color: black;
+}
+
+/* isian form kanan */
+.kanan{
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+}
+
+.isianform .kanan img{
+    width: 35px;
+    height: auto;
+    float: left;
+    margin-right: 20px;
+}
+
+.isianform .keterangan{
+    width: auto;
+}
+
+.isianform .keterangan h5{
+    font-size: 18px;
+}
+
+/* footer */
+footer{
+    width: 100%;
+    height: auto;
+    background-color: #02435F;
+}
+
+/* footer atas */
+.top-foot{
+    width: 100%;
+    padding: 150px 0;
+}
+
+.top-foot .justify-foot{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top-foot .single-widget{
+    display: flex;
+    align-content: center;
+    column-gap: 20px;
+}
+
+.top-foot .single-widget .konten-widget{
+    width: auto;
+    height: 270px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+/* kolom pertama */
+.konten-widget .widget-info{
+    width: 320px;
+}
+
+.widget-info .footer-logo img{
+    width: 140px;
+    height: 42px;
+    padding-bottom: 40px;
+}
+
+.widget-info .dev-info{
+    width: auto;
+    height: 105px;
+    line-height: 25px;
+    color: #FCFFFB;
+}
+
+.widget-info .dev-info a{
+    color: #FCFFFB;
+    text-decoration: none;
+}
+
+.widget-info .web-sosmed{
+    width: auto;
+    height: 75px;
+    display: flex;
+    align-items: center;
+}
+
+.widget-info .web-sosmed ul li{
+    list-style: none;
+}
+
+.widget-info .web-sosmed a{
+    color: #FCFFFB;
+    padding: 0 10px;
+    text-decoration: none;
+}
+
+/* kolom company */
+.konten-widget .company-col{
+    width: 160px;
+}
+
+.konten-widget h3{
+    font-size: 20px;
+    padding-bottom: 45px;
+    color: #FCFFFB;
+}
+
+.company-col li{
+    list-style: none;
+    padding: 0 130px 0 0;
+    line-height: 36px;
+}
+
+.company-col li a{
+    text-decoration: none;
+    color: #FCFFFB;
+}
+
+/* kolom destinasi */
+.konten-widget .pop-dest-col{
+    width: 300px;
+}
+
+.pop-dest-col ul li{
+    list-style: none;
+    line-height: 36px;
+    float: left;
+    width: 148px;
+}
+
+.pop-dest-col ul li a{
+    text-decoration: none;
+    color: #FCFFFB;
+}
+
+/* kolom ig */
+.ig-view{
+    width: 240px;
+}
+
+.ig-view .ig-gallery{
+    display: grid;
+    row-gap: 22px;
+    cursor: pointer;
+    grid-template-columns: auto auto auto;
+}
+
+.ig-view .ig-gallery .konten-ig{
+    position: relative;
+}
+
+.ig-view .ig-gallery .konten-ig img{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.ig-view .ig-gallery .konten-ig:hover img{
+    filter: brightness(60%);
+    width: 64px;
+    height: 64px;
+    transition: 0.4s ease;
+}
+
+.konten-widget a:hover{
+    color: #C36531;
+    transition: 0.4s ease;
+}
+
+/* footer bawah */
+.bottom-foot{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-content: center;
+}
+
+.bottom-foot .konten-foot{
+    width: 88%;
+    height: auto;
+    margin: auto;
+    text-align: center;
+
+    border-top: 1px solid #FCFFFB;
+}
+
+.bottom-foot .konten-foot p{
+    font-size: 14px;
+    padding: 27px 0;
+    color: #FCFFFB;
+}

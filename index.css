@@ -1,0 +1,705 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+menu{
+    width: 100%;
+    height: 65px;
+    background-color: bisque;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: fixed;
+    z-index: 100;
+}
+
+menu .logo{
+    float: left;
+    margin-left: 50px;
+}
+
+menu .logo img{
+    width: 100px;
+    height: auto;
+}
+
+/* menu kiri */
+menu nav ul li{
+    float: left;
+    line-height: 65px;
+    padding: 0 30px;
+}
+
+menu nav ul li:hover{
+    background-color: whitesmoke;
+}
+
+nav ul li a{
+    color: black;
+}
+
+nav ul li:hover a{
+    color: maroon;
+}
+
+nav ul ul{
+    display: none;
+    position: absolute;
+}
+
+nav ul li:hover ul{
+    display: block;
+    background-color: bisque;
+}
+
+nav ul li ul li{
+    float: none;
+}
+
+/* menu kanan */
+menu .menu-kanan{
+    display: flex;
+    align-items: center;
+}
+
+menu .kontak img{
+    width: 16px;
+    height: auto;
+    float: left;
+}
+
+menu .kontak p{
+    float: right;
+    padding: 0 15px;
+    margin-right: 15px;
+    border-right: 1px solid black;
+}
+
+menu .logo1{
+    margin-right: 20px;
+}
+
+menu .logo1 img{
+    width: 16px;
+    height: auto;
+    margin-right: 15px;
+}
+
+menu .cari{
+    width: 50px;
+    height: 65px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+menu .cari img{
+    width: 14px;
+    height: auto;
+}
+
+section{
+    padding-top: 65px;
+}
+
+/* foto */
+.foto{
+    width: 100%;
+    height: 610px;
+}
+
+.foto .wallpaper{
+    width: 100%;
+    height: 610px;
+    position: relative;
+}
+
+.foto .wallpaper img{
+    width: 100%;
+    height: 610px;
+    position: absolute;
+    object-fit: cover;
+}
+
+.foto .wallpaper .tulisan{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.foto .wallpaper .tulisan h3{
+    font-size: 96px;
+    font-family: broad away;
+    color: rgb(21, 90, 115);
+}
+
+.foto .wallpaper .tulisan p{
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.foto .wallpaper .tulisan button{
+    padding: 20px 30px;
+    border: none;
+    border-radius: 7px;
+    background-color: bisque;
+    color: rgb(21, 90, 115);
+    font-weight: 700;
+}
+
+.foto .wallpaper .tulisan button:hover{
+    background-color: maroon;
+    color: white;
+}
+
+/* akhir wallpaper */
+.akhirwallpaper{
+    width: 100%;
+    height: auto;
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(21, 90, 115);
+}
+
+.akhirwallpaper p{
+    font-size: 20px;
+    color: bisque;
+}
+
+.akhirwallpaper input{
+    background-color: bisque;
+    border: none;
+    padding: 15px 25px;
+    width: 180px;
+    border-radius: 10px;
+}
+
+.akhirwallpaper select{
+    background-color: bisque;
+    border: none;
+    padding: 15px 25px;
+    width: 200px;
+    border-radius: 10px;
+}
+
+.akhirwallpaper button{
+    background-color: bisque;
+    border: none;
+    padding: 17px 35px;
+    font-weight: 700;
+    border-radius: 10px;
+}
+
+.akhirwallpaper button:hover{
+    background-color: maroon;
+    color: white;
+}
+
+/* destinasi populer */
+.destinasi{
+    width: 100%;
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.destinasi h4{
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+.destinasi p{
+    width: 400px;
+    margin-bottom: 45px;
+    font-size: 12px;
+    color: gray;
+    text-align: center;
+}
+
+.fotoall{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 30px;
+    row-gap: 30px;
+}
+
+.destinasi .fotogaleri .fotoall .singlefoto{
+    position: relative;
+    width: 320px;
+    height: 320px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.destinasi .fotogaleri .fotoall .singlefoto img{
+    width: 320px;
+    height: 320px;
+    border-radius: 5%;
+    object-fit: cover;
+    position: absolute;
+    filter: brightness(72%);
+}
+
+.destinasi .fotogaleri .fotoall .singlefoto h5{
+    position: relative;
+    color: white;
+    font-size: 20px;
+    margin: 20px;
+}
+
+.destinasi .fotogaleri .fotoall .singlefoto a{
+    position: relative;
+    color: white;
+    background-color: lightseagreen;
+    padding: 10px 20px;
+    border-radius: 18px;
+    margin: 18px;
+}
+
+.destinasi .fotogaleri .fotoall .singlefoto:hover{
+    margin-top: -14px;
+    padding-bottom: 14px;
+}
+
+.destinasi .fotogaleri .fotoall .singlefoto:hover h5{
+    color: maroon;
+}
+
+.destinasi .fotogaleri .fotoall .singlefoto:hover a{
+    background-color: maroon;
+}
+
+/* bawah galeri */
+.bawahgaleri{
+    width: 100%;
+    height: auto;
+    padding: 65px 0;
+    background-color: rgb(21, 90, 115);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 80px;
+}
+
+/* bawah galeri kiri*/
+.bawahgaleri .kiri{
+    width: 26%;
+}
+
+.bawahgaleri .kiri h3{
+    font-size: 24px;
+    margin-bottom: 6px;
+    color: white;
+}
+
+.bawahgaleri .kiri p{
+    color: lightgray;
+}
+
+/* bawah galeri kanan */
+.bawahgaleri .kanan input{
+    width: 300px;
+    height: auto;
+    padding: 15px;
+    border: none;
+    border-radius: 6px;
+    margin-right: 15px;
+    background-color: bisque;
+}
+
+.bawahgaleri .kanan button{
+    width: auto;
+    height: auto;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 6px;
+    background-color: bisque;
+    font-weight: 700;
+}
+
+.bawahgaleri .kanan button:hover{
+    background-color: maroon;
+    color: white;
+}
+
+/* Popular Places */
+.populerplcs{
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.populerplcs > h3{
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+.populerplcs > p{
+    width: 400px;
+    margin-bottom: 45px;
+    font-size: 12px;
+    color: gray;
+    text-align: center;
+}
+
+.populerplcs .fotoplcs{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.box {
+    width: 300px;
+    height: 320px;
+    background-color: bisque;
+    border-radius: 10px;
+}
+
+.box img{
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.box h3{
+    padding: 10px 10px 5px;
+}
+
+.box p{
+    padding: 5px 10px;
+}
+
+.box .nomer{
+    position: absolute;
+    margin-left: 10px;
+    margin-top: -240px;
+    width: 58px;
+    background-color: lightseagreen;
+    text-align: center;
+    padding: 6px;
+    border-radius: 18px;
+    font-weight: 700;
+}
+
+.box .bawah{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px 0;
+    align-items: center;
+}
+
+.box .bawah .kiri img{
+    float: left;
+    width: 84px;
+    height: 15px;
+}
+
+.box .bawah .kiri h6{
+    float: left;
+}
+
+.box:hover .nomer{
+    color: red;
+}
+.box:hover h3{
+    color: red;
+}
+
+.buttonbawah button{
+    padding: 15px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: bisque;
+    margin-top: 50px;
+    font-weight: 700;
+}
+
+.buttonbawah button:hover{
+    background-color: maroon;
+    color: white;
+}
+
+/* video */
+.vid .youtube iframe{
+    width: 100%;
+    height: 500px;
+}
+
+/* bawah video */
+.containervid{
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.bag1{
+    width: 300px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    row-gap: 15px;
+}
+
+.bag1 img{
+    width: 75px;
+    height: auto;
+}
+
+/* coment */
+.coment{
+    width: 100%;
+    height: auto;
+    padding: 50px 0;
+    background-color: rgb(21, 90, 115);
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    align-items: center;
+    text-align: center;
+}
+
+.coment .isi img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.coment .isi p{
+    color: whitesmoke;
+}
+
+.coment .isi h3{
+    font-size: 16px;
+    color: whitesmoke;
+    margin-top: 15px;
+}
+
+/* recent trips */
+.recent{
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 50px;
+}
+
+.recent h3{
+    font-size: 30px;
+}
+
+.fotorec img{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.recent .fotorec p{
+    font-size: 12px; 
+    color: rgb(156, 156, 156);
+    margin: 10px 0 15px;
+}
+.recent .fotorec h5{
+    font-size: 15px;
+}
+
+.recent .fotorec:hover h5{
+    color: red;
+}
+
+/* footer */
+footer{
+    width: 100%;
+    height: auto;
+    background-color: #02435F;
+}
+
+/* footer atas */
+.top-foot{
+    width: 100%;
+    padding: 150px 0;
+}
+
+.top-foot .justify-foot{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top-foot .single-widget{
+    display: flex;
+    align-content: center;
+    column-gap: 20px;
+}
+
+.top-foot .single-widget .konten-widget{
+    width: auto;
+    height: 270px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+/* kolom pertama */
+.konten-widget .widget-info{
+    width: 320px;
+}
+
+.widget-info .footer-logo img{
+    width: 140px;
+    height: 42px;
+    padding-bottom: 40px;
+}
+
+.widget-info .dev-info{
+    width: auto;
+    height: 105px;
+    line-height: 25px;
+    color: #FCFFFB;
+}
+
+.widget-info .dev-info a{
+    color: #FCFFFB;
+    text-decoration: none;
+}
+
+.widget-info .web-sosmed{
+    width: auto;
+    height: 75px;
+    display: flex;
+    align-items: center;
+}
+
+.widget-info .web-sosmed ul li{
+    list-style: none;
+}
+
+.widget-info .web-sosmed a{
+    color: #FCFFFB;
+    padding: 0 10px;
+    text-decoration: none;
+}
+
+/* kolom company */
+.konten-widget .company-col{
+    width: 160px;
+}
+
+.konten-widget h3{
+    font-size: 20px;
+    padding-bottom: 45px;
+    color: #FCFFFB;
+}
+
+.company-col li{
+    list-style: none;
+    padding: 0 130px 0 0;
+    line-height: 36px;
+}
+
+.company-col li a{
+    text-decoration: none;
+    color: #FCFFFB;
+}
+
+/* kolom destinasi */
+.konten-widget .pop-dest-col{
+    width: 300px;
+}
+
+.pop-dest-col ul li{
+    list-style: none;
+    line-height: 36px;
+    float: left;
+    width: 148px;
+}
+
+.pop-dest-col ul li a{
+    text-decoration: none;
+    color: #FCFFFB;
+}
+
+/* kolom ig */
+.ig-view{
+    width: 240px;
+}
+
+.ig-view .ig-gallery{
+    display: grid;
+    row-gap: 22px;
+    cursor: pointer;
+    grid-template-columns: auto auto auto;
+}
+
+.ig-view .ig-gallery .konten-ig{
+    position: relative;
+}
+
+.ig-view .ig-gallery .konten-ig img{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.ig-view .ig-gallery .konten-ig:hover img{
+    filter: brightness(60%);
+    width: 64px;
+    height: 64px;
+    transition: 0.4s ease;
+}
+
+.konten-widget a:hover{
+    color: #C36531;
+    transition: 0.4s ease;
+}
+
+/* footer bawah */
+.bottom-foot{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-content: center;
+}
+
+.bottom-foot .konten-foot{
+    width: 88%;
+    height: auto;
+    margin: auto;
+    text-align: center;
+
+    border-top: 1px solid #FCFFFB;
+}
+
+.bottom-foot .konten-foot p{
+    font-size: 14px;
+    padding: 27px 0;
+    color: #FCFFFB;
+}

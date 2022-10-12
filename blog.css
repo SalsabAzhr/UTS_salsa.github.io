@@ -1,0 +1,623 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+menu{
+    width: 100%;
+    height: 65px;
+    background-color: bisque;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: fixed;
+    z-index: 100;
+}
+
+menu .logo{
+    float: left;
+    margin-left: 50px;
+}
+
+menu .logo img{
+    width: 100px;
+    height: auto;
+}
+
+/* menu kiri */
+menu nav ul li{
+    float: left;
+    line-height: 65px;
+    padding: 0 30px;
+}
+
+menu nav ul li:hover{
+    background-color: whitesmoke;
+}
+
+nav ul li a{
+    color: black;
+}
+
+nav ul li:hover a{
+    color: maroon;
+}
+
+nav ul ul{
+    display: none;
+    position: absolute;
+}
+
+nav ul li:hover ul{
+    display: block;
+    background-color: bisque;
+}
+
+nav ul li ul li{
+    float: none;
+}
+
+/* menu kanan */
+menu .menu-kanan{
+    display: flex;
+    align-items: center;
+}
+
+menu .kontak img{
+    width: 16px;
+    height: auto;
+    float: left;
+}
+
+menu .kontak p{
+    float: right;
+    padding: 0 15px;
+    margin-right: 15px;
+    border-right: 1px solid black;
+}
+
+menu .logo1{
+    margin-right: 20px;
+}
+
+menu .logo1 img{
+    width: 16px;
+    height: auto;
+    margin-right: 15px;
+}
+
+menu .cari{
+    width: 50px;
+    height: 65px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+menu .cari img{
+    width: 14px;
+    height: auto;
+}
+
+section{
+    padding-top: 65px;
+}
+
+/* foto */
+.foto{
+    width: 100%;
+    height: 400px;
+}
+
+.foto .wallpaper{
+    width: 100%;
+    height: 400px;
+    position: relative;
+}
+
+.foto .wallpaper img{
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    object-fit: cover;
+}
+
+.foto .wallpaper .tulisan{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.foto .wallpaper .tulisan h3{
+    font-size: 96px;
+    font-family: broad away;
+    color: rgb(21, 90, 115);
+}
+
+.foto .wallpaper .tulisan p{
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: white;
+}
+
+/* tengahin konten */
+.konten-tengah{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 80px 0;
+}
+
+/* kiri */
+.konten-blog{
+    width: 610px;
+    height: auto;
+    margin-bottom: 55px;
+    box-shadow: 2px 2px 10px rgb(78, 78, 78);
+}
+
+.konten-blog img{
+    width: 610px;
+    height: 305px;
+    object-fit: cover;
+}
+
+.keterangan-blog{
+    width: auto;
+    height: 150px;
+    padding: 60px 30px 35px 35px;
+    margin-top: -3px;
+}
+
+.keterangan-blog .teks h3{
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 15px;
+}
+
+.keterangan-blog .teks h3:hover{
+    color: maroon;
+    cursor: pointer;
+}
+
+.keterangan-blog .teks p{
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(78, 78, 78);
+    padding-bottom: 30px;
+}
+
+.keterangan-blog ul li{
+    float: left;
+}
+
+.category{
+    margin-top: -2.5px;
+    margin-right: 10px;
+    border-right: 1px solid black;
+}
+
+.keterangan-blog a{
+    padding-right: 10px;
+    color: black;
+}
+
+.keterangan-blog a:hover{
+    color: maroon;
+}
+
+.konten-blog .date-box{
+    width: 94px;
+    height: 90px;
+    border-radius: 5px;
+    background-color: maroon;
+    position: absolute;
+    margin: -60px 0 0 40px;
+}
+
+.konten-blog .date-box:hover{
+    background-color: rgba(245, 245, 245, 0.35);
+}
+
+.konten-blog .date-box a:hover{
+    color: red;
+}
+
+.konten-blog .date-box a{
+    width: 94px;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.konten-blog .date-box h3{
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.konten-blog .date-box p{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* pagination */
+.pagination{
+    display: flex;
+    justify-content: center;
+    column-gap: 12px;
+}
+
+.pagination a{
+    border: 1px solid #02435F;
+    color: #02435F;
+    padding: 16px;
+    font-size: 16px;
+}
+
+.pagination a:hover{
+    color: maroon;
+}
+
+/* kanan */
+.kotak-cari, .kategori, .posting, .kotak-tag, .instagram, .newsletter{
+    width: 320px;
+    height: auto;
+    padding: 30px 20px;
+    margin-bottom: 35px;
+    background-color: whitesmoke;
+}
+
+.kanan h3{
+    font-size: 22px;
+    margin-bottom: 40px;
+    padding-bottom: 10px;
+    font-weight: 600;
+    color: black;
+    border-bottom: 1px solid rgb(78, 78, 78);
+}
+
+/* bagian cari */
+.kotak-cari{
+    display: flex;
+    flex-direction: column;
+}
+
+.kotak-cari .search-row{
+    height: 50px;
+    background-color: #FCFFFB;
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.kotak-cari .search-row input{
+    width: 240px;
+    padding: 0 12px 0 20px;
+    border: none;
+    background-color: transparent;
+}
+
+.kotak-cari .search-row button{
+    width: 44px;
+    height: 44px;
+    border: none;
+    color: black;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.kotak-cari > button{
+    height: 50px;
+    background-color: maroon;
+    margin-top: 18px;
+    border: none;
+    color: #FCFFFB;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.kotak-cari > button:hover{
+    background-color: lightseagreen;
+    color: black;
+    transition: 0.5s ease;
+}
+
+/* bagian kategori */
+.kategori li#not{
+    border-bottom: 1px solid rgb(78, 78, 78);
+}
+
+.kategori li a{
+    display: flex;
+    color: rgb(78, 78, 78);
+    padding: 12px 0;
+}
+
+.kategori li a p{
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.kategori li:hover a{
+    color: maroon;
+}
+
+/* bagian post */
+.posting .post-media{
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.posting .post-media img{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.posting .post-media h3{
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 0;
+    padding-bottom: -4px;
+    border: none;
+    cursor: pointer;
+}
+
+.posting .post-media h3:hover{
+    color: maroon;
+}
+
+.posting .post-media p{
+    font-size: 14px;
+    color: rgb(78, 78, 78);
+}
+
+/* bagian tag */
+.kotak-tag ul li{
+    border: 1px solid rgb(78, 78, 78);
+    width: fit-content;
+    height: fit-content;
+    padding: 6px 18px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    display: inline-block;
+    background-color: #FCFFFB;
+}
+
+.kotak-tag ul li a{
+    color: rgb(78, 78, 78);
+    font-weight: 500;
+}
+
+.kotak-tag ul li:hover{
+    background-color: maroon;
+}
+
+.kotak-tag ul li:hover a{
+    color: white;
+}
+
+/* bagian ig */
+.instagram ul li{
+    display: inline-block;
+    margin: 0 10px 10px 0;
+}
+
+.instagram ul li img{
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    filter: brightness(90%);
+    cursor: pointer;
+}
+
+/* newsletter */
+.newsletter{
+    display: flex;
+    flex-direction: column;
+}
+
+.newsletter input{
+    height: 50px;
+    padding: 0 0 0 20px;
+}
+
+.newsletter button{
+    height: 50px;
+    margin-top: 18px;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #FCFFFB;
+    background-color: maroon;
+}
+
+.newsletter button:hover{
+    color: black;
+    background-color: lightseagreen;
+}
+
+/* footer */
+footer{
+    width: 100%;
+    height: auto;
+    background-color: rgb(21, 90, 115);
+}
+
+/* footer atas */
+.top-foot{
+    width: 100%;
+    padding: 150px 0;
+}
+
+.top-foot .justify-foot{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top-foot .single-widget{
+    display: flex;
+    align-content: center;
+    column-gap: 20px;
+}
+
+.top-foot .single-widget .konten-widget{
+    width: auto;
+    height: 270px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+/* kolom pertama */
+.konten-widget .widget-info{
+    width: 320px;
+}
+
+.widget-info .footer-logo img{
+    width: 140px;
+    height: 42px;
+    padding-bottom: 40px;
+}
+
+.widget-info .dev-info{
+    width: auto;
+    height: 105px;
+    line-height: 25px;
+    color: #FCFFFB;
+}
+
+.widget-info .dev-info a{
+    color: #FCFFFB;
+    text-decoration: none;
+}
+
+.widget-info .web-sosmed{
+    width: auto;
+    height: 75px;
+    display: flex;
+    align-items: center;
+}
+
+.widget-info .web-sosmed ul li{
+    list-style: none;
+}
+
+.widget-info .web-sosmed a{
+    color: #FCFFFB;
+    padding: 0 10px;
+    text-decoration: none;
+}
+
+/* kolom company */
+.konten-widget .company-col{
+    width: 160px;
+}
+
+.konten-widget h3{
+    font-size: 20px;
+    padding-bottom: 45px;
+    color: #FCFFFB;
+}
+
+.company-col li{
+    list-style: none;
+    padding: 0 130px 0 0;
+    line-height: 36px;
+}
+
+.company-col li a{
+    text-decoration: none;
+    color: #FCFFFB;
+}
+
+/* kolom destinasi */
+.konten-widget .pop-dest-col{
+    width: 300px;
+}
+
+.pop-dest-col ul li{
+    list-style: none;
+    line-height: 36px;
+    float: left;
+    width: 148px;
+}
+
+.pop-dest-col ul li a{
+    text-decoration: none;
+    color: #FCFFFB;
+}
+
+/* kolom ig */
+.ig-view{
+    width: 240px;
+}
+
+.ig-view .ig-gallery{
+    display: grid;
+    row-gap: 22px;
+    cursor: pointer;
+    grid-template-columns: auto auto auto;
+}
+
+.ig-view .ig-gallery .konten-ig{
+    position: relative;
+}
+
+.ig-view .ig-gallery .konten-ig img{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.ig-view .ig-gallery .konten-ig:hover img{
+    filter: brightness(60%);
+    width: 64px;
+    height: 64px;
+}
+
+.konten-widget a:hover{
+    color: maroon;
+}
+
+/* footer bawah */
+.bottom-foot{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-content: center;
+}
+
+.bottom-foot .konten-foot{
+    width: 88%;
+    height: auto;
+    margin: auto;
+    text-align: center;
+
+    border-top: 1px solid #FCFFFB;
+}
+
+.bottom-foot .konten-foot p{
+    font-size: 14px;
+    padding: 27px 0;
+    color: #FCFFFB;
+}
